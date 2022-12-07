@@ -87,10 +87,6 @@ ul li::before {
   margin-right: 0.5rem;
 }
 
-.item input[type="checkbox"]:focus + label {
-  text-decoration: underline;
-}
-
 .item > label {
   font-size: 0.75rem;
   flex-grow: 1;

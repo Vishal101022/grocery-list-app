@@ -1,9 +1,8 @@
-const Footer = () => {
-  const date = new Date();
+const Footer = (props) => {
 
   return (
     <footer>
-      <p>Copyright &copy; {date.getFullYear()}</p>
+      <p>{props.length} List {(props.length === 1) ? "item" : "items"}</p>
     </footer>
   );
 };

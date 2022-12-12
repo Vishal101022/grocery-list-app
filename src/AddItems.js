@@ -1,6 +1,6 @@
 import { FaPlus } from 'react-icons/fa';
 
-const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
+const AddItems = ({ newItem, setNewItem, handleSubmit }) => {
 
     return (
         <form className='addForm' onSubmit={handleSubmit}>
@@ -23,4 +23,4 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
     )
 }
 
-export default AddItem
+export default AddItems

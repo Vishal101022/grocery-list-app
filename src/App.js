@@ -6,9 +6,8 @@ import SearchItems from "./SearchItems";
 import { useState } from "react";
 
 function App() {
-  // 3 hooks for each functions
   const [items, setItems] = useState(
-    //retrive current localStorage data
+    //retrive initial localStorage data
     JSON.parse(localStorage.getItem("grocerylist"))
   );
   const [newItem, setNewItem] = useState("");
@@ -47,7 +46,7 @@ function App() {
     e.preventDefault();
     if (!newItem) return;
     addItem(newItem);
-    // clear submit input after add newitems
+    // reset submit input
     setNewItem("");
   };
 
